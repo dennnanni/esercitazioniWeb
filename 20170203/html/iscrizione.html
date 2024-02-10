@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Iscrizione</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <form action="#">
+            <fieldset>
+                <legend>Dati anagrafici</legend>
+                <ul>
+                    <li>
+                        <label>Nome:<input id="nome" name="nome" type="text" value="" placeholder="Inserisci il tuo nome"/></label>
+                    </li>
+                    <li>
+                        <label>Cognome:<input id="cognome" name="cognome" type="text" value="" placeholder="Inserisci il tuo cognome"/></label>
+                    </li>
+                    <li>
+                        <label>Matricola:<input id="matricola" name="matricola" type="text" value="" placeholder="Inserisci la tua matricola"/></label>
+                    </li>
+                    <li>
+                        <label>Email:<input id="email" name="email" type="email" value=""/></label>
+                    </li>
+                    <li>
+                        <label>Gruppo:<input id="gruppo" name="gruppo" type="number" value="1" min="1" max="30"/></label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Prenotazione esame</legend>
+                <ul>
+                    <li>
+                        <label>Data esame:<input id="dataEsame" name="dataEsame" type="date" value=""/></label>
+                    </li>
+                    <li>
+                        <p>
+                            Tipo esame:
+                            <input id="esameOrale" name="tipoEsame" type="radio" value="orale"/>
+                            <label for="esameOrale">Esame orale</label>
+                            <input id="esameScritto" name="tipoEsame" type="radio" value="scritto"/>
+                            <label for="esameScritto">Esame scritto</label>
+                        </p>
+                    </li>
+                </ul>
+            </fieldset>
+            <label for="submit" hidden>Invia i dati</label>
+            <input id="submit" name="submit" type="submit" value="Submit"/>
+        </form>
+    </body>
+</html>
