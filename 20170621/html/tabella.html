@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appelli d'esame</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th id="appelli" scope="colgroup" colspan="5">Appelli d'esame</th>
+            </tr>
+            <tr>
+                <th id="attivita" scope="colgroup" colspan="2">Attività formative</th>
+                <th id="dataora" scope="col" rowspan="2">Data e ora</th>
+                <th id="campus" scope="col" rowspan="2">Campus</th>
+                <th id="iscritti" scope="col" rowspan="2">Iscritti</th>
+            </tr>
+            <tr>
+                <th id="codice" scope="col">Codice</th>
+                <th id="nome" scope="col">Nome</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td headers="appelli attivita codice">41731</td>
+                <td headers="appelli attivita nome">TECNOLOGIE WEB</td>
+                <td headers="appelli dataora">21 giugno 2017</td>
+                <td headers="appelli campus">Cesena</td>
+                <td headers="appelli iscritti">31</td>
+            </tr>
+            <tr>
+                <td headers="appelli attivita codice">28106</td>
+                <td headers="appelli attivita nome">INFORMATICA PER LE SCIENZE AMBIENTALI</td>
+                <td headers="appelli dataora" rowspan="3">29 giugno 2017</td>
+                <td headers="appelli campus" rowspan="3">Ravenna</td>
+                <td headers="appelli iscritti">17</td>
+            </tr>
+            <tr>
+                <td headers="appelli attivita codice">58157</td>
+                <td headers="appelli attivita nome">ABILITA' INFORMATICHE</td>
+                <td headers="appelli iscritti">2</td>
+            </tr>
+            <tr>
+                <td headers="appelli attivita codice">37487</td>
+                <td headers="appelli attivita nome">COMPUTER SCIENCE APPLICATIONS TO CULTURAL HERITAGE</td>
+                <td headers="appelli iscritti">5</td>
+            </tr>
+            <tr>
+                <td headers="appelli attivita codice">17667</td>
+                <td headers="appelli attivita nome">SISTEMI MULTIMEDIALI</td>
+                <td headers="appelli dataora">21 giugno 2017</td>
+                <td headers="appelli campus">Cesena</td>
+                <td headers="appelli iscritti">6</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th id="totale" scope="row" headers="appelli" colspan="4">Totale iscritti</th>
+                <td headers="appelli iscritti totale">61</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
