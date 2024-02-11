@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acquisto libri</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Selezione titoli</legend>
+            <ul>
+                <li>
+                    <label>
+                        Sistemi Operativi. Concetti ed esempi, di Abrham Silberschatz et al. <input name="titolo" type="checkbox" value="os"/>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Linguaggi di programmazione. Principi e paradigmi di Maurizio Gabbrielli e Simone Martini <input name="titolo" type="checkbox" value="progr"/>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        I moderni sistemi operativi, di Andrew Tanenbaum <input name="titolo" type="checkbox" value="osmoderni"/>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Fondamenti di reti di calcolatori, di Andrew Tanenbaum <input name="titolo" type="checkbox" value="reti"/>
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Formato</legend>
+            <ul>
+                <li>
+                    <label>
+                        Copertina rigida <input name="formato" type="radio" value="rigida"/>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Copertina flessibile <input name="formato" type="radio" value="flessibile"/>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Formato elettronico <input name="formato" type="radio" value="elettronico"/>
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Dati di consegna</legend>
+            <ul>
+                <li>
+                    <label for="nome">
+                        Nome: <input id="nome" name="nome" type="text" value=""/>
+                    </label>
+                </li>
+                <li>
+                    <label for="cognome">
+                        Cognome: <input id="cognome" name="cognome" type="text" value=""/>
+                    </label>
+                </li>
+                <li>
+                    <label for="via">
+                        Via: <input id="via" name="via" type="text" value=""/>
+                    </label>
+                </li>
+                <li>
+                    <label for="civico">
+                        Numero civico: <input id="civico" name="civico" type="number" value="1" min="1"/>
+                    </label>
+                </li>
+                <li>
+                    <label for="citta">
+                        Città: <input id="citta" name="citta" type="text" value=""/>
+                    </label>
+                </li>
+                <li>
+                    <label for="provincia">
+                        Provincia: <input id="provincia" name="provincia" type="text" value=""/>
+                    </label>
+                </li>
+                <li>
+                    <label for="cap">
+                        CAP: <input id="cap" name="cap" type="text" value=""/>
+                    </label>
+                </li>
+                <li>
+                    <label for="orarioFlessibile">
+                        Orario flessibile <input id="orarioFlessibile" name="orarioFlessibile" type="radio" value="orarioFlessibile"/>
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        <ul>
+            <li>
+                <label for="pagamento">Pagamento alla consegna</label>
+                <input id="pagamento" name="pagamento" type="checkbox" value="pagamentoConsegna"/>
+            </li>
+            <li>
+                <label for="submit" hidden>Invia opzioni di acquisto</label>
+                <input id="submit" name="submit" type="submit" value="Submit"/>
+            </li>
+            <li>
+                <label for="reset" hidden>Annulla acquisto</label>
+                <input id="reset" name="reset" type="reset" value="Annulla"/>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
