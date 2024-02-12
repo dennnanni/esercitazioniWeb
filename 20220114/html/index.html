@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Appelli d'esame</title>
+    <style>
+        td, th, table {border: 1px solid black;}
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Appelli d'esame</caption>
+        <tr>
+            <th id="giorno" scope="col">Giorno</th>
+            <th id="aula" scope="col">Aula</th>
+            <th id="primaFascia" scope="col">9:00 - 10:00</th>
+            <th id="secondaFascia" scope="col">10:00 - 11:00</th>
+            <th id="terzaFascia" scope="col">11:00 - 12:00</th>
+        </tr>
+        <tr>
+            <th headers="giorno" rowspan="2" id="lunedi" scope="rowgroup">Lunedì</th>
+            <th headers="aula" id="aula2.9" scope="row">Aula 2.9</th>
+            <td headers="primaFascia secondaFascia lunedi aula2.9" colspan="2">Sistemi Operativi</td>
+            <td headers="terzaFascia lunedi aula2.9">Informatica e diritto</td>
+        </tr>
+        <tr>
+            <th headers="aula" id="laboratorio3.1" scope="row">Laboratorio 3.1</th>
+            <td headers="lunedi laboratorio3.1 primaFascia">Reti di telecomunicazione</td>
+            <td colspan="2" headers="lunedi laboratorio3.1 secondaFascia terzaFascia">Basi di dati</td>
+        </tr>
+        <tr>
+            <th headers="giorno" rowspan="2" id="martedi" scope="rowgroup">Martedì</th>
+            <th headers="aula" id="aula2.5" scope="row">Aula 2.5</th>
+            <td headers="martedi aula2.5 primaFascia">Programmazione</td>
+            <td headers="martedi aula2.5 secondaFascia">Analisi Matematica</td>
+            <td headers="martedi aula2.5 terzaFascia">Algoritmi e strutture dati</td>
+        </tr>
+        <tr>
+            <th headers="aula" id="laboratorio3.3" scope="row">Laboratorio 3.3</th>
+            <td colspan="2" headers="martedi laboratorio3.3 primaFascia secondaFascia">Tecnologie Web</td>
+            <td headers="martedi laboratorio3.3 terzaFascia">Programmazione ad oggetti</td>
+        </tr>
+    </table>
+</body>
+</html>
