@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+nav, header, footer {
+    border-radius: 10px;
+}
+
+nav {
+    float: left;
+    width: 10%;
+    border: 2px solid orange;
+}
+
+nav ul li {
+    list-style: square;
+    line-height: 2em;
+}
+
+nav li a:hover {
+    background-color: orange;
+    color: white;
+}
+
+header, section, footer {
+    width: 80%;
+    float: right;
+    margin-right: 5%;
+}
+
+header {
+    background-color: orange;
+    border: 2px solid darkred;
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    color: black;
+
+}
+
+section p {
+    color: black;
+    text-align: start;
+}
+
+footer {
+    border: 2px solid darkred;
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    color: darkred;
+    font-size: 70%;
+}
+

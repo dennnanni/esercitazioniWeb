@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Cover</title>
+</head>
+<body>
+    <section>
+        <header><h1>Scelta cover</h1></header>
+        <form action="#">
+            <ul>
+                <li>
+                    <fieldset>
+                        <legend>Scegli il modello del telefono.</legend>
+                        <ul>
+                            <li>
+                                <label>iPhone <input id="iphone" name="modello" type="radio" value="iphone"/></label>
+                            </li>
+                            <li>
+                                <label>Samsung <input id="samsung" name="modello" type="radio" value="samsung"/></label>
+                            </li>
+                            <li>
+                                <label>Huawei <input id="huawei" name="modello" type="radio" value="huawei"/></label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </li>
+                <li>
+                    <label>Scegli un colore: <input id="color" name="color" type="color"/></label>
+                </li>
+                <li>
+                    <label for="submit" hidden>Invia dati</label>
+                    <input id="submit" name="submit" type="submit" value="Submit"/>
+                </li>
+                <li>
+                    <label for="reset" hidden>Invia dati</label>
+                    <input id="reset" name="reset" type="reset" value="Reset"/>
+                </li>
+            </ul>
+        </form>
+    </section>
+</body>
+</html>
