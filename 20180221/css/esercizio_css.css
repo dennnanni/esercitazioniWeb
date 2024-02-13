@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+header, th {
+    background-color: green;
+    color: white;
+}
+
+header {
+    border: 2px solid black;
+    border-right: none;
+    border-left: none;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+header, table {
+    width: 100%;
+}
+
+table tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+    border-left: none;
+    border-right: none;
+    margin-top: 5%;
+}
+
+th, td {
+    text-align: start;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+th, td {
+    padding: 0.5% 0;
+}
