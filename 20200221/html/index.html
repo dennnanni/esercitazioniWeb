@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+    <title>Iscrizione</title>
+</head>
+<body>
+    <header><h1>Iscrizione</h1></header>
+    <form action="action.php" method="get">
+        <fieldset>
+            <legend>Informazioni Personali:</legend>
+            <label for="nome">Nome:*</label>
+            <input id="nome" name="nome" type="text" value="" placeholder="Nome" required/>
+            <label for="cognome">Cognome:*</label>
+            <input id="cognome" name="cognome" type="text" value="" placeholder="Cognome" required/>
+            <label for="data">Data di nascita:*</label>
+            <input id="data" name="data" type="date" value="" min="1900-01-01" required/>
+        </fieldset>
+        <fieldset>
+            <legend>Informazioni aggiuntive:</legend>
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <label>Scegli un colore <input id="colore" name="colore" type="color" value="#FF0000"/></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <label>Oppure scegli dalla lista</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="radioRosso" name="radioColor" type="radio" value="#FF0000" checked/><label for="radioRosso">Rosso</label>
+                    </td>
+                    <td>
+                        <input id="radioBlu" name="radioColor" type="radio" value="#0000FF"/><label for="radioBlu">Blu</label>
+                    </td>
+                    <td>
+                        <input id="radioVerde" name="radioColor" type="radio" value="#00FF00"/><label for="radioVerde">Verde</label>
+                    </td>
+                    <td>
+                        <input id="radioAltro" name="radioColor" type="radio" /><label for="radioAltro">Altro</label>    
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <input id="submit" name="submit" type="submit" value="Invia"/>
+    </form>
+</body>
+</html>

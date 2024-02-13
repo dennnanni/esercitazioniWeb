@@ -35,6 +35,8 @@ if (isset($_POST) && isset($_POST["lettera"])) {
     $occorrenze = pos_all($result["parola"], $_POST["lettera"]);
 }
 
+echo $result["parola"];
+
 ?>
 
 
@@ -45,15 +47,20 @@ if (isset($_POST) && isset($_POST["lettera"])) {
   </head>
   <body>
     <form action="index.php" method="post">
-      <label>Lettera</label>
-      <input type="text" name="lettera" id="lettera">
-      <br>
-      <input type="submit" value="submit">
+		<label>Lettera</label>
+		<input type="text" name="lettera" id="lettera">
+		<br>
+		<input type="submit" value="submit">
     </form>
     <div>
-        <?php foreach($occorrenze as $occorrenza): ?>
-            
-        <?php endforeach; ?>
+    	<?php if (isset($occorrenze)): ?>
+			<span>
+				<?php foreach(str_split($result["parola"]) as $occorrenza) {
+					echo $occorrenza == $_POST["lettera"] ? $_POST["lettera"] : " _ ";
+				}
+				?>
+			</span>
+		<?php endif; ?>
     </div>
   </body>
 </html>
