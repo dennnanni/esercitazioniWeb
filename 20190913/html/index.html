@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <script src="../js/soluzione.js" type="text/javascript"></script>
+</head>
+<body>
+    <h1>Personaggi Star Wars</h1>
+    <form action="../php/index.php" method="POST">
+        <fieldset>
+            <legend>Campi personaggio</legend>
+            <ul>
+                <li>
+                    <label for="name">Nome</label>
+                    <input id="name" name="name" type="text"/>
+                </li>
+                <li>
+                    <label for="height">Altezza</label>
+                    <input id="height" name=" height" type="number"/>
+                </li>
+                <li>
+                    <label for="mass">Peso</label>
+                    <input type="number" id="mass" name="mass"/>
+                </li>
+            </ul>
+        </fieldset>
+        <input type="button" id="btnSubmit" name="btnSubmit" value="Aggiungi">
+    </form>
+    <div class="table"></div>
+</body>
+</html>
