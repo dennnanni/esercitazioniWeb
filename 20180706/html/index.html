@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alimenti</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css"></link>
+</head>
+<body>
+    <table>
+        <caption>Composizione chimica e valore energetico degli alimenti (per 100 g.)</caption>
+        <thead>
+            <!-- <tr>
+                <th scope="colgroup" id="composizione" colspan="14">Composizione chimica e valore energetico degli alimenti (per 100 g.)</th>
+            </tr> -->
+            <tr>
+                <td headers="composizione"></td>
+                <th scope="colgroup" id="carne" colspan="13">CARNE</th>
+            </tr>
+            <tr>
+                <td headers="composizione"></td>
+                <th scope="colgroup" id="fresca" headers="carne" colspan="8">FRESCA</th>
+                <th scope="colgroup" id="conservata" headers="carne" colspan="5">CONSERVATA</th>
+            </tr>
+            <tr>
+                <td headers="composizione"></td>
+                <th scope="colgroup" id="bovino" headers="carne fresca" colspan="6">BOVINO</th>
+                <th scope="colgroup" id="pollame" headers="carne fresca" colspan="2">POLLAME</th>
+                <th scope="colgroup" id="suino" headers="carne conservata" colspan="5">SUINO</th>
+            </tr>
+            <tr>
+                <td headers="composizione"></td>
+                <th scope="colgroup" id="vitellone" headers="carne fresca bovino" colspan="3">VITELLONE</th>
+                <th scope="colgroup" id="adulto" headers="carne fresca bovino" colspan="3">ADULTO</th>
+                <th scope="colgroup" id="faraona" headers="carne fresca pollame" colspan="2">FARAONA</th>
+                <th scope="colgroup" id="salsiccia" headers="carne conservata suino" colspan="2">SALSICCIA</th>
+                <th scope="colgroup" id="prosciutto" headers="carne conservata suino" colspan="3">PROSCIUTTO</th>
+            </tr>
+            <tr>
+                <td headers="composizione"></td>
+                <th scope="col" id="vitelloneMagra" headers="carne fresca bovino vitellone">MAGRA</th>
+                <th scope="col" id="vitelloneSemiGrassa" headers="carne fresca bovino vitellone">SEMI-GRASSA</th>
+                <th scope="col" id="vitelloneGrassa" headers="carne fresca bovino vitellone">GRASSA</th>
+                <th scope="col" id="adultoMagra" headers="carne fresca bovino adulto">MAGRA</th>
+                <th scope="col" id="adultoSemiGrassa" headers="carne fresca bovino adulto">SEMI-GRASSA</th>
+                <th scope="col" id="adultoGrassa" headers="carne fresca bovino adulto">GRASSA</th>
+                <th scope="col" id="petto" headers="carne fresca pollame faraona">PETTO</th>
+                <th scope="col" id="coscia" headers="carne fresca pollame faraona">COSCIA</th>
+                <th scope="col" id="suinoFresca" headers="carne conservata suino salsiccia">FRESCA</th>
+                <th scope="col" id="suinoSecca" headers="carne conservata suino salsiccia">SECCA</th>
+                <th scope="col" id="crudo" headers="carne conservata suino prosciutto">CRUDO</th>
+                <th scope="col" id="crudoMagro" headers="carne conservata suino prosciutto">CRUDO MAGRO</th>
+                <th scope="col" id="cotto" headers="carne conservata suino prosciutto">COTTO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="proteine" scope="row">Proteine</th>
+                <td headers="proteine carne fresca vitellone vitelloneMagra">0</td>
+                <td headers="proteine carne fresca vitellone vitelloneSemiGrassa">0</td>
+                <td headers="proteine carne fresca vitellone vitelloneGrassa">0</td>
+                <td headers="proteine carne fresca adulto adultoMagra">0</td>
+                <td headers="proteine carne fresca adulto adultoSemiGrassa">0</td>
+                <td headers="proteine carne fresca adulto adultoGrassa">0</td>
+                <td headers="proteine carne fresca pollame faraona petto">0</td>
+                <td headers="proteine carne fresca pollame faraona coscia">0</td>
+                <td headers="proteine carne conservata suino salsiccia suinoFresca">0</td>
+                <td headers="proteine carne conservata suino salsiccia suinoSecca">0</td>
+                <td headers="proteine carne conservata suino prosciutto crudo">0</td>
+                <td headers="proteine carne conservata suino prosciutto crudoMagro">0</td>
+                <td headers="proteine carne conservata suino prosciutto cotto">0</td>
+            </tr>
+            <tr>
+                <th id="lipidi" scope="row">Lipidi</th>
+                <td headers="lipidi carne fresca vitellone vitelloneMagra">0</td>
+                <td headers="lipidi carne fresca vitellone vitelloneSemiGrassa">0</td>
+                <td headers="lipidi carne fresca vitellone vitelloneGrassa">0</td>
+                <td headers="lipidi carne fresca adulto adultoMagra">0</td>
+                <td headers="lipidi carne fresca adulto adultoSemiGrassa">0</td>
+                <td headers="lipidi carne fresca adulto adultoGrassa">0</td>
+                <td headers="lipidi carne fresca pollame faraona petto">0</td>
+                <td headers="lipidi carne fresca pollame faraona coscia">0</td>
+                <td headers="lipidi carne conservata suino salsiccia suinoFresca">0</td>
+                <td headers="lipidi carne conservata suino salsiccia suinoSecca">0</td>
+                <td headers="lipidi carne conservata suino prosciutto crudo">0</td>
+                <td headers="lipidi carne conservata suino prosciutto crudoMagro">0</td>
+                <td headers="lipidi carne conservata suino prosciutto cotto">0</td>
+            </tr>
+            <tr>
+                <th id="glucidi" scope="row">Glucidi</th>
+                <td headers="glucidi carne fresca vitellone vitelloneMagra">0</td>
+                <td headers="glucidi carne fresca vitellone vitelloneSemiGrassa">0</td>
+                <td headers="glucidi carne fresca vitellone vitelloneGrassa">0</td>
+                <td headers="glucidi carne fresca adulto adultoMagra">0</td>
+                <td headers="glucidi carne fresca adulto adultoSemiGrassa">0</td>
+                <td headers="glucidi carne fresca adulto adultoGrassa">0</td>
+                <td headers="glucidi carne fresca pollame faraona petto">0</td>
+                <td headers="glucidi carne fresca pollame faraona coscia">0</td>
+                <td headers="glucidi carne conservata suino salsiccia suinoFresca">0</td>
+                <td headers="glucidi carne conservata suino salsiccia suinoSecca">0</td>
+                <td headers="glucidi carne conservata suino prosciutto crudo">0</td>
+                <td headers="glucidi carne conservata suino prosciutto crudoMagro">0</td>
+                <td headers="glucidi carne conservata suino prosciutto cotto">0</td>
+            </tr>
+            <tr>
+                <th id="kcal" scope="row">Kcal</th>
+                <td headers="kcal carne fresca vitellone vitelloneMagra">0</td>
+                <td headers="kcal carne fresca vitellone vitelloneSemiGrassa">0</td>
+                <td headers="kcal carne fresca vitellone vitelloneGrassa">0</td>
+                <td headers="kcal carne fresca adulto adultoMagra">0</td>
+                <td headers="kcal carne fresca adulto adultoSemiGrassa">0</td>
+                <td headers="kcal carne fresca adulto adultoGrassa">0</td>
+                <td headers="kcal carne fresca pollame faraona petto">0</td>
+                <td headers="kcal carne fresca pollame faraona coscia">0</td>
+                <td headers="kcal carne conservata suino salsiccia suinoFresca">0</td>
+                <td headers="kcal carne conservata suino salsiccia suinoSecca">0</td>
+                <td headers="kcal carne conservata suino prosciutto crudo">0</td>
+                <td headers="kcal carne conservata suino prosciutto crudoMagro">0</td>
+                <td headers="kcal carne conservata suino prosciutto cotto">0</td>
+            </tr>
+            <tr>
+                <th id="kj" scope="row">KJ</th>
+                <td headers="kj carne fresca vitellone vitelloneMagra">0</td>
+                <td headers="kj carne fresca vitellone vitelloneSemiGrassa">0</td>
+                <td headers="kj carne fresca vitellone vitelloneGrassa">0</td>
+                <td headers="kj carne fresca adulto adultoMagra">0</td>
+                <td headers="kj carne fresca adulto adultoSemiGrassa">0</td>
+                <td headers="kj carne fresca adulto adultoGrassa">0</td>
+                <td headers="kj carne fresca pollame faraona petto">0</td>
+                <td headers="kj carne fresca pollame faraona coscia">0</td>
+                <td headers="kj carne conservata suino salsiccia suinoFresca">0</td>
+                <td headers="kj carne conservata suino salsiccia suinoSecca">0</td>
+                <td headers="kj carne conservata suino prosciutto crudo">0</td>
+                <td headers="kj carne conservata suino prosciutto crudoMagro">0</td>
+                <td headers="kj carne conservata suino prosciutto cotto">0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
