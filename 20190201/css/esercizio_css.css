@@ -1,0 +1,53 @@
+body {
+    font-family: Arial;
+    font-size: 100%;
+}
+
+fieldset {
+    padding-left: 10px;
+    padding-right: 40px;
+    margin-right: 3%;
+    margin-left: 1%;
+}
+
+header {
+    text-align: center;
+    border-radius: 5px;
+}
+
+header, input[type="submit"], input[type="reset"] {
+    background-color: purple;
+    color: white;
+}
+
+section {
+    width: 100%;
+}
+
+label {
+    margin-top: 2%;
+}
+
+input:not([type="submit"], [type="reset"]), select {
+    width: 100%;
+    border: 2px solid purple;
+    border-radius: 5px;
+    padding: 5px 0;
+    margin: 0.5% 1% 0.5% 0.5%;
+}
+
+input[type="submit"], input[type="reset"] {
+    width: 46%;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 10px 0;
+    margin-top: 1%;
+    margin-left: 1.5%;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: pink;
+    color: purple;
+    font-weight: bold;
+}
+
